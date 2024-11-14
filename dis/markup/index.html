@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <title>U.P Skill Development Mission : उत्तर प्रदेश कौशल विकास मिशन</title>
+    
 </head>
 <body>
+    <!-- header section starts here -->
+    <header class="sticky top-0 z-[1] text-white shadow-customDropshadow">
+        <div class="h-10 px-52 flex justify-between items-center bg-gradient-to-r from-fuchsia-900 via-red-800 to-orange-300 text-sm">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
+                <div id="timestamp"></div>
+            </div>
+            <div>Toll Free Helpline Number : 0522-4944200</div>
+        </div>
+        <div class="bg-white py-[6px] px-52 flex justify-between">
+            <div class="flex">
+                <img class="h-24 mx-1" src="../../assets/images/upgovt 1.png" alt="upgovt 1.png">
+                <a href="#" class="mx-1">
+                    <h1 class="text-center text-[2rem] font-semibold bg-gradient-to-r from-blue-500 to-indigo-950 bg-clip-text text-transparent">U.P Skill Development Mission</h1>
+                    <h1 class="text-center text-[1.5rem] font-normal bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent">उत्तर प्रदेश कौशल विकास मिशन</h1>
+                </a>
+            </div>
+            <div class="flex">
+                <img class="h-24" src="../../assets/images/UPSDM_Logo 1.png" alt="UPSDM_Logo 1.png">
+                <img class="h-24" src="../../assets/images/Azadilogo 1.png" alt="Azadilogo 1.png">
+            </div>
+        </div>
+        <nav class="h-10 px-52 flex justify-between items-center bg-gradient-to-r from-fuchsia-900 via-red-800 to-orange-300">
+            <ul class="flex font-medium">
+                <li class="mx-5"><a href="#"><i class="fa-solid fa-house-chimney" style="color: #fe9116;"></i></a></li>
+                <li class="px-5 border-l border-white transition duration-1000 ease-in-out hover:text-[#fe9116]" ><a href="#">About</a></li>
+                <li class="px-5 border-l border-white transition duration-1000 ease-in-out hover:text-[#fe9116]" ><a href="#">Success Stories</a></li>
+                <li class="px-5 border-l border-white transition duration-1000 ease-in-out hover:text-[#fe9116]" ><a href="#">Downloads</a></li>
+                <li class="px-5 border-l border-white transition duration-1000 ease-in-out hover:text-[#fe9116]" ><a href="#">Contact Us</a></li>
+                <li class="px-5 border-l border-white transition duration-1000 ease-in-out hover:text-[#fe9116]" ><a href="#">Login</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <!-- header section ends here -->
+
+    <main>
+        <!-- Hero/Banner section starts here -->
+       <section class="bannerSlider w-full mx-auto overflow-hidden " >
+           <div>
+               <img id="bannerSlide" class="w-full" src="" alt="banner image1">
+            </div>
+            <div>
+                <button id="bannerPrevSlideBtn" class="absolute top-2/4 left-0 p-2 text-2xl bg-white border-none transition duration-700 ease-in-out hover:bg-[#fe9116] hover:text-white">&#10094</button>
+                <button id="bannerNextSlideBtn" class="absolute top-2/4 right-0 p-2 text-2xl bg-white border-none transition duration-700 ease-in-out hover:bg-[#fe9116] hover:text-white">&#10095</button>
+            </div>
+        </section>
+        <!-- Hero/Banner section ends here -->
+         
+        <!-- Hero/Banner section starts here -->
+    </main>
+
     
+    
+    <script src="../js/index.js"></script>
 </body>
 </html>

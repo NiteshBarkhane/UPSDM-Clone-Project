@@ -3,11 +3,11 @@ let timestamp = document.getElementById("timestamp")
 setInterval(updateRealDateTime,1000)
 function updateRealDateTime(){
     const dateTime = new Date()
-    const understanderableDateTime = dateTime.toUTCString()
+    const understanderableDateTime = dateTime.toLocaleString()
     timestamp.innerHTML = understanderableDateTime;
 }
 
-//Banner automatic image change Slider
+// Hero/Banner automatic Slider image change with transition  
 const bannerImages = ['../../assets/images/cover1 1.png','../../assets/images/cover2 1.png','../../assets/images/cover3 1.png','../../assets/images/cover4 1.png']
 let sliderIndex = 0;
 var bannerSlides = document.getElementById("bannerSlide")
@@ -19,7 +19,11 @@ document.addEventListener('DOMContentLoaded',()=>{
 })
 setInterval(() => {
     sliderIndex = (sliderIndex + 1) % bannerImages.length
-    bannerSlides.src = bannerImages[sliderIndex]
+    bannerSlides.style.opacity=0;
+    setTimeout(()=>{
+        bannerSlides.src = bannerImages[sliderIndex]
+        bannerSlides.style.opacity=1;
+    },500)
 },7000)
 prevSlide.addEventListener('click', () => {
     sliderIndex = (sliderIndex - 1 + bannerImages.length) % bannerImages.length

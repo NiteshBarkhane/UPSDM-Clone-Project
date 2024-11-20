@@ -4,17 +4,65 @@
 
 
 @layer components{
+
+    /* Sections common Style */
+    .sectionStyle{
+        @apply px-4 lg:px-52;
+    }
     
+    /* Header Section */
     .navbar-links{
         @apply px-5 border-l border-white transition duration-1000 ease-in-out hover:text-[#fe9116];
     }
+
+    /* Hero/Banner Section */
+    .banner-slider-btn{
+        @apply hidden lg:block absolute top-2/4 p-2 text-2xl bg-white border-none transition duration-700 ease-in-out hover:bg-[#fe9116] hover:text-white;
+    }
     .hero-section-circles{
-        @apply w-40 h-40 md:w-48 md:h-48 border-[3px] border-white rounded-full flex flex-col justify-center items-center cursor-pointer gap-2;
+        @apply w-40 h-40 md:w-48 md:h-48 border-[3px] border-white rounded-full flex flex-col justify-center items-center cursor-pointer gap-2 bg-gradient-to-r;
     }
     .hero-circle-title{
         @apply text-white w-min text-center font-semibold leading-[1.1rem];
     }
-    .skill-path-circles{
+
+    /* Welcome Section */
+    .welcome-img-cards{
+        @apply m-auto border-none rounded-md overflow-hidden text-center h-48 w-44 content-end bg-cover bg-center transition ease-in duration-300 hover:scale-105;
+    }
+
+    /* Skill Path Section */
+    .skillPath-circles{
         @apply h-40 w-40 my-4 p-2 text-center flex items-center rounded-full bg-contain bg-[#ffffffe3] text-slate-800 text-opacity-0 outline-gray-400 outline-2 outline-offset-4 outline-dashed hover:cursor-pointer hover:text-opacity-100 hover:bg-blend-overlay;
+    }
+    .skillPath-updateList-nodes{
+        @apply flex items-center py-4 border-b border-solid border-[#80808061];
+    }
+
+    /* Skill Development Section */
+    .skillDevelopment-img-cards{
+        @apply w-60 h-60 hover:-translate-y-3 transition ease-in duration-200;
+    }
+
+    /* Skill Progress Section */
+    .skillProgress-cards{
+        @apply w-40 mx-auto py-8 flex flex-col items-center;
+    }
+    .skillProgress-cards-icon{
+        @apply w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl;
+    }
+    .skillProgress-cards-qty{
+        @apply text-white text-2xl leading-10;
+    }
+    .skillProgress-cards-title{
+        @apply text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent;
+    }
+
+    /* Footer Section */
+    .footer-items{
+        @apply my-2 hover:cursor-pointer hover:text-[#fe9116];
+    }
+    .footer-items-icon{
+        @apply  mx-2 text-gray-700;
     }
 }

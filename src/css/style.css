@@ -554,6 +554,22 @@ video {
   display: none;
 }
 
+/* Sections common Style */
+
+.sectionStyle {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .sectionStyle {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+
+/* Header Section */
+
 .navbar-links {
   border-left-width: 1px;
   --tw-border-opacity: 1;
@@ -572,6 +588,38 @@ video {
   color: rgb(254 145 22 / var(--tw-text-opacity, 1));
 }
 
+/* Hero/Banner Section */
+
+.banner-slider-btn {
+  position: absolute;
+  top: 50%;
+  display: none;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.banner-slider-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 145 22 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px) {
+  .banner-slider-btn {
+    display: block;
+  }
+}
+
 .hero-section-circles {
   display: flex;
   height: 10rem;
@@ -585,6 +633,7 @@ video {
   border-width: 3px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 @media (min-width: 768px) {
@@ -604,7 +653,36 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.skill-path-circles {
+/* Welcome Section */
+
+.welcome-img-cards {
+  margin: auto;
+  height: 12rem;
+  width: 11rem;
+  align-content: flex-end;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  border-style: none;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.welcome-img-cards:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+/* Skill Path Section */
+
+.skillPath-circles {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -624,14 +702,105 @@ video {
   outline-color: #9ca3af;
 }
 
-.skill-path-circles:hover {
+.skillPath-circles:hover {
   cursor: pointer;
   --tw-text-opacity: 1;
   background-blend-mode: overlay;
 }
 
-.absolute {
-  position: absolute;
+.skillPath-updateList-nodes {
+  display: flex;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: #80808061;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Skill Development Section */
+
+.skillDevelopment-img-cards {
+  height: 15rem;
+  width: 15rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.skillDevelopment-img-cards:hover {
+  --tw-translate-y: -0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+/* Skill Progress Section */
+
+.skillProgress-cards {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.skillProgress-cards-icon {
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.skillProgress-cards-qty {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.skillProgress-cards-title {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: #fffdec var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 253 236 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #e88200 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: transparent;
+}
+
+/* Footer Section */
+
+.footer-items {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-items:hover {
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  color: rgb(254 145 22 / var(--tw-text-opacity, 1));
+}
+
+.footer-items-icon {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
 .relative {
@@ -654,12 +823,12 @@ video {
   top: 0px;
 }
 
-.top-2\/4 {
-  top: 50%;
-}
-
 .z-\[1\] {
   z-index: 1;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .m-auto {
@@ -669,11 +838,6 @@ video {
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mx-4 {
@@ -696,6 +860,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -706,8 +875,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -726,20 +903,12 @@ video {
   height: 2.5rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-24 {
   height: 6rem;
 }
 
-.h-48 {
-  height: 12rem;
-}
-
-.h-60 {
-  height: 15rem;
+.h-28 {
+  height: 7rem;
 }
 
 .h-80 {
@@ -750,24 +919,12 @@ video {
   height: 3px;
 }
 
-.w-20 {
-  width: 5rem;
+.h-screen {
+  height: 100vh;
 }
 
 .w-28 {
   width: 7rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-44 {
-  width: 11rem;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .w-fit {
@@ -777,6 +934,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .transform {
@@ -793,10 +954,6 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.content-end {
-  align-content: flex-end;
 }
 
 .items-center {
@@ -843,8 +1000,8 @@ video {
   overflow-y: scroll;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-md {
@@ -873,8 +1030,8 @@ video {
   border-width: 1px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-solid {
@@ -889,8 +1046,14 @@ video {
   border-color: #80808029;
 }
 
-.border-\[\#80808061\] {
-  border-color: #80808061;
+.border-neutral-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 212 / var(--tw-border-opacity, 1));
+}
+
+.border-zinc-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(161 161 170 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#2e1e0b\] {
@@ -932,18 +1095,8 @@ video {
   --tw-bg-opacity: 0.7;
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-\[\#fffdec\] {
-  --tw-gradient-from: #fffdec var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 253 236 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-amber-500 {
@@ -1010,10 +1163,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #0f172a var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.to-\[\#e88200\] {
-  --tw-gradient-to: #e88200 var(--tw-gradient-to-position);
-}
-
 .to-cyan-500 {
   --tw-gradient-to: #06b6d4 var(--tw-gradient-to-position);
 }
@@ -1055,12 +1204,16 @@ video {
           background-clip: text;
 }
 
-.bg-center {
-  background-position: center;
+.bg-bottom {
+  background-position: bottom;
 }
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-6 {
@@ -1095,6 +1248,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-4 {
@@ -1208,11 +1366,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1235,10 +1388,6 @@ video {
 
 .italic {
   font-style: italic;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
 }
 
 .leading-7 {
@@ -1264,14 +1413,19 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-700 {
+.text-red-700 {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+  color: rgb(185 28 28 / var(--tw-text-opacity, 1));
 }
 
 .text-red-950 {
   --tw-text-opacity: 1;
   color: rgb(69 10 10 / var(--tw-text-opacity, 1));
+}
+
+.text-sky-600 {
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity, 1));
 }
 
 .text-slate-600 {
@@ -1299,6 +1453,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1317,44 +1477,14 @@ video {
   transition-duration: 1000ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
-}
-
-.duration-700 {
-  transition-duration: 700ms;
-}
-
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hover\:-translate-y-3:hover {
-  --tw-translate-y: -0.75rem;
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
-}
-
-.hover\:bg-\[\#fe9116\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 145 22 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:text-\[\#fe9116\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(254 145 22 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 1024px) {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
                 <li class="navbar-links"><a href="#">Success Stories</a></li>
                 <li class="navbar-links"><a href="#">Downloads</a></li>
                 <li class="navbar-links"><a href="#">Contact Us</a></li>
-                <li class="navbar-links"><a href="#">Login</a></li>
+                <li class="navbar-links"><a href="../pages/login.html">Login</a></li>
             </ul>    
         </nav>
         <menu id="navMenu" class="hidden lg:hidden py-2 bg-zinc-800 text-white">
@@ -57,7 +57,7 @@
                 <li class="navbar-links border-none my-2"><a href="#">Success Stories</a></li>
                 <li class="navbar-links border-none my-2"><a href="#">Downloads</a></li>
                 <li class="navbar-links border-none my-2"><a href="#">Contact Us</a></li>
-                <li class="navbar-links border-none my-2"><a href="#">Login</a></li>
+                <li class="navbar-links border-none my-2"><a href="../pages/login.html">Login</a></li>
             </ul> 
         </menu>
     </header>
@@ -71,28 +71,28 @@
                     <img id="bannerSlide" class="w-full transition-opacity duration-1000" src="" alt="banner image1">
                 </div>
                 <div>
-                    <button id="bannerPrevSlideBtn" class="absolute top-2/4 left-0 p-2 text-2xl bg-white border-none transition duration-700 ease-in-out hover:bg-[#fe9116] hover:text-white">&#10094</button>
-                    <button id="bannerNextSlideBtn" class="absolute top-2/4 right-0 p-2 text-2xl bg-white border-none transition duration-700 ease-in-out hover:bg-[#fe9116] hover:text-white">&#10095</button>
+                    <button id="bannerPrevSlideBtn" class="banner-slider-btn left-0">&#10094</button>
+                    <button id="bannerNextSlideBtn" class="banner-slider-btn right-0">&#10095</button>
                 </div>
             </div>
             <div class="relative -top-11 flex justify-center gap-7 flex-wrap">
-                <div class="hero-section-circles bg-gradient-to-r from-orange-600 to-fuchsia-700">
+                <div class="hero-section-circles from-orange-600 to-fuchsia-700">
                     <i class="fa-regular fa-address-card text-5xl" style="color: #ffffff;"></i>
                     <p class="hero-circle-title">Candidate Registration</p>
                 </div>
-                <div class="hero-section-circles bg-gradient-to-r from-amber-500 to-red-600">
+                <div class="hero-section-circles from-amber-500 to-red-600">
                     <i class="fa-regular fa-building text-5xl" style="color: #ffffff;"></i>
                     <p class="hero-circle-title">UPSDM Alumni</p>
                 </div>
-                <div class="hero-section-circles bg-gradient-to-r from-green-950 to-lime-600">
+                <div class="hero-section-circles from-green-950 to-lime-600">
                     <i class="fa-solid fa-chart-line text-5xl" style="color: #ffffff;"></i>
                     <p class="hero-circle-title">Skill&nbsp;Mitra Portal</p>
                 </div>
-                <div class="hero-section-circles bg-gradient-to-r from-sky-900 to-teal-950">
+                <div class="hero-section-circles from-sky-900 to-teal-950">
                     <i class="fa-solid fa-scroll text-5xl" style="color: #ffffff;"></i>
                     <p class="hero-circle-title">SSDP/DSDP Report</p>
                 </div>
-                <div class="hero-section-circles bg-gradient-to-r from-sky-600 to-cyan-500">
+                <div class="hero-section-circles from-sky-600 to-cyan-500">
                     <i class="fa-solid fa-language text-5xl" style="color: #ffffff;"></i>
                     <p class="hero-circle-title">Candidate Registration Foreign&nbsp;Language</p>
                 </div>   
@@ -101,7 +101,7 @@
         <!-- Hero/Banner section ends here -->
          
         <!-- Welcome section starts here -->
-         <section class="flex-col px-4 lg:px-52 py-7 flex lg:flex-row items-center justify-around gap-5">
+         <section class="sectionStyle py-7 flex flex-col lg:flex-row items-center justify-around gap-5">
             <div class="text-center lg:w-[45rem] px-5">
                 <div>
                     <h2 class="italic text-4xl">Welcome<br>To<br>U.P. Skill Development Mission</h2>
@@ -112,25 +112,25 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-7 text-white">
-                <div style="background-image: url('../../assets/images/stateminister 1.png');" class="m-auto border-none rounded-md overflow-hidden text-center h-48 w-44 content-end bg-cover bg-center">
+                <div style="background-image: url('../../assets/images/stateminister 1.png');" class="welcome-img-cards">
                     <div class="pt-3 pb-1 bg-black bg-opacity-70">
                         <div class="text-[0.65rem] font-extrabold">Shri Kapil Dev Aggarwal</div>
                         <div class="text-[0.55rem] font-semibold">Hon'ble State Minister</div>
                     </div>
                 </div>
-                <div style="background-image: url('../../assets/images/PSSirimg\ 1.png');" class="m-auto border-none rounded-md overflow-hidden text-center h-48 w-44 content-end bg-cover bg-center">
+                <div style="background-image: url('../../assets/images/PSSirimg\ 1.png');" class="welcome-img-cards">
                     <div class="pt-3 pb-1 bg-black bg-opacity-70">
                         <div class="text-[0.65rem] font-extrabold">Shri Alok Kumar, IAS</div>
                         <div class="text-[0.55rem] font-semibold">Principal Secretary</div>
                     </div>
                 </div>
-                <div style="background-image: url('../../assets/images/md\ 1.png');" class="m-auto border-none rounded-md overflow-hidden text-center h-48 w-44 content-end bg-cover bg-center">
+                <div style="background-image: url('../../assets/images/md\ 1.png');" class="welcome-img-cards">
                     <div class="pt-3 pb-1 bg-black bg-opacity-70">
                         <div class="text-[0.65rem] font-extrabold">Shri Abhishek Singh, IAS</div>
                         <div class="text-[0.55rem] font-semibold">Mission Director</div>
                     </div>
                 </div>
-                <div style="background-image: url('../../assets/images/amd\ 1.png');" class="m-auto border-none rounded-md overflow-hidden text-center h-48 w-44 content-end bg-cover bg-center">
+                <div style="background-image: url('../../assets/images/amd\ 1.png');" class="welcome-img-cards">
                     <div class="pt-3 pb-1 bg-black bg-opacity-70">
                         <div class="text-[0.65rem] font-extrabold">Miss. Priya Singh, PCS</div>
                         <div class="text-[0.55rem] font-semibold">Add. Mission Director</div>
@@ -141,26 +141,26 @@
         <!-- Welcome section ends here -->
 
         <!-- Skill Path section starts here -->
-         <section class="px-4 lg:px-52">
+         <section class="sectionStyle">
             <div class="pt-4">
                 <h3 class="text-3xl font-semibold text-center">Skilling Path</h3>
                 <div class="my-2 mx-auto h-[3px] w-28 bg-orange-600 rounded-l-full rounded-r-full"></div>
             </div>
             <div class="py-4 grid grid-cols-2 lg:grid-cols-4 justify-around">
                 <div class="text-center flex flex-col items-center">
-                    <div style="background-image: url('../../assets/images/SkillPath\ img1.png');" class="skill-path-circles">Candidate registration process to UPSDM Portal.</div>
+                    <div style="background-image: url('../../assets/images/SkillPath\ img1.png');" class="skillPath-circles">Candidate registration process to UPSDM Portal.</div>
                     <div class="text-lg text-slate-700 font-medium">Registration</div>
                 </div>
                 <div class="text-center flex flex-col items-center">
-                    <div style="background-image: url('../../assets/images/SkillPath\ img2.png');" class="skill-path-circles">We provide different Skill Courses to imporve your skill.</div>
+                    <div style="background-image: url('../../assets/images/SkillPath\ img2.png');" class="skillPath-circles">We provide different Skill Courses to imporve your skill.</div>
                     <div class="text-lg text-slate-700 font-medium">Training</div>
                 </div>
                 <div class="text-center flex flex-col items-center">
-                    <div style="background-image: url('../../assets/images/SkillPath\ img3.png');" class="skill-path-circles">You can check your result to login on portal.</div>
+                    <div style="background-image: url('../../assets/images/SkillPath\ img3.png');" class="skillPath-circles">You can check your result to login on portal.</div>
                     <div class="text-lg text-slate-700 font-medium">Assessment</div>
                 </div>
                 <div class="text-center flex flex-col items-center">
-                    <div style="background-image: url('../../assets/images/SkillPath\ img4.png');" class="skill-path-circles">Placement opportunities for skilled candidate.</div>
+                    <div style="background-image: url('../../assets/images/SkillPath\ img4.png');" class="skillPath-circles">Placement opportunities for skilled candidate.</div>
                     <div class="text-lg text-slate-700 font-medium">Placement</div>
                 </div>
             </div>
@@ -170,70 +170,70 @@
                         <i class="fa-solid fa-bookmark mx-4" style="color: #e45615;"></i>Latest Updates
                     </div>
                     <div class="h-80 overflow-y-scroll">
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
                                 <p class="text-slate-600 leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                             </div>
                         </div>
-                        <div class="flex items-center py-4 border-b border-solid border-[#80808061]">
+                        <div class="skillPath-updateList-nodes">
                             <i class="fa-regular fa-calendar text-4xl mx-4" style="color: #ee7e17;"></i>
                             <div>
                                 <p>25 July 2024</p>
@@ -251,68 +251,68 @@
         <!-- Skill Path section ends here -->
 
         <!-- Skill development section starts here -->
-         <section class="px-4 lg:px-52">
+         <section class="sectionStyle">
             <div class="pt-4">
                 <h3 class="text-3xl font-semibold text-center">Skill Development</h3>
                 <div class="my-2 mx-auto h-[3px] w-28 bg-orange-600 rounded-l-full rounded-r-full"></div>
             </div>
             <div class="py-6 flex justify-around overflow-x-scroll gap-2">
-                <img src="../../assets/images/fitter_mri 1.png" class="w-60 h-60 hover:-translate-y-3 transition ease-in duration-200" alt="Skill Development images">
-                <img src="../../assets/images/class_mri 1.png" class="w-60 h-60 hover:-translate-y-3 transition ease-in duration-200" alt="Skill Development images">
-                <img src="../../assets/images/skill_5_mri 1.png" class="w-60 h-60 hover:-translate-y-3 transition ease-in duration-200" alt="Skill Development images">
-                <img src="../../assets/images/skill_6_mri 1.png" class="w-60 h-60 hover:-translate-y-3 transition ease-in duration-200" alt="Skill Development images">
-                <img src="../../assets/images/skill_8_mri 1.png" class="w-60 h-60 hover:-translate-y-3 transition ease-in duration-200" alt="Skill Development images">
+                <img src="../../assets/images/fitter_mri 1.png" class="skillDevelopment-img-cards" alt="Skill Development images">
+                <img src="../../assets/images/class_mri 1.png" class="skillDevelopment-img-cards" alt="Skill Development images">
+                <img src="../../assets/images/skill_5_mri 1.png" class="skillDevelopment-img-cards" alt="Skill Development images">
+                <img src="../../assets/images/skill_6_mri 1.png" class="skillDevelopment-img-cards" alt="Skill Development images">
+                <img src="../../assets/images/skill_8_mri 1.png" class="skillDevelopment-img-cards" alt="Skill Development images">
             </div>
          </section>
         <!-- Skill development section ends here -->
 
         <!-- Skill Progress section Starts here -->
-         <section class="px-4 lg:px-52 pb-16">
+         <section class="sectionStyle pb-16">
             <div class="bg-[#2e1e0b]">
                 <div class="pt-8">
                     <h3 class="text-white text-3xl font-semibold text-center">Skilling Progress in UP</h3>
                     <div class="my-2 mx-auto h-[3px] w-28 bg-orange-600 rounded-l-full rounded-r-full"></div>
                 </div>
                 <div class="pt-4 pb-8 grid grid-cols-2 lg:grid-cols-4">
-                    <div class="w-40 mx-auto py-8 flex flex-col items-center">
-                        <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl"><i class="fa-solid fa-users-between-lines"></i></span>
-                        <p class="text-white text-2xl leading-10">910</p>
-                        <p class="text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent">Training Partners</p>
+                    <div class="skillProgress-cards">
+                        <span class="skillProgress-cards-icon"><i class="fa-solid fa-users-between-lines"></i></span>
+                        <p class="skillProgress-cards-qty">910</p>
+                        <p class="skillProgress-cards-title">Training Partners</p>
                     </div>
-                    <div class="w-40 mx-auto py-8 flex flex-col items-center">
-                        <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl"><i class="fa-solid fa-users-between-lines"></i></span>
-                        <p class="text-white text-2xl leading-10">8669</p>
-                        <p class="text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent">Training Centre</p>
+                    <div class="skillProgress-cards">
+                        <span class="skillProgress-cards-icon"><i class="fa-solid fa-users-between-lines"></i></span>
+                        <p class="skillProgress-cards-qty">8669</p>
+                        <p class="skillProgress-cards-title">Training Centre</p>
                     </div>
-                    <div class="w-40 mx-auto py-8 flex flex-col items-center">
-                        <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl"><i class="fa-solid fa-users-between-lines"></i></span>
-                        <p class="text-white text-2xl leading-10">39</p>
-                        <p class="text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent">Sectors</p>
+                    <div class="skillProgress-cards">
+                        <span class="skillProgress-cards-icon"><i class="fa-solid fa-users-between-lines"></i></span>
+                        <p class="skillProgress-cards-qty">39</p>
+                        <p class="skillProgress-cards-title">Sectors</p>
                     </div>
-                    <div class="w-40 mx-auto py-8 flex flex-col items-center">
-                        <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl"><i class="fa-solid fa-users-between-lines"></i></span>
-                        <p class="text-white text-2xl leading-10">1385</p>
-                        <p class="text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent">Courses</p>
+                    <div class="skillProgress-cards">
+                        <span class="skillProgress-cards-icon"><i class="fa-solid fa-users-between-lines"></i></span>
+                        <p class="skillProgress-cards-qty">1385</p>
+                        <p class="skillProgress-cards-title">Courses</p>
                     </div>
-                    <div class="w-40 mx-auto py-8 flex flex-col items-center">
-                        <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl"><i class="fa-solid fa-users-between-lines"></i></span>
-                        <p class="text-white text-2xl leading-10">1052255</p>
-                        <p class="text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent">Enrolled</p>
+                    <div class="skillProgress-cards">
+                        <span class="skillProgress-cards-icon"><i class="fa-solid fa-users-between-lines"></i></span>
+                        <p class="skillProgress-cards-qty">1052255</p>
+                        <p class="skillProgress-cards-title">Enrolled</p>
                     </div>
-                    <div class="w-40 mx-auto py-8 flex flex-col items-center">
-                        <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl"><i class="fa-solid fa-users-between-lines"></i></span>
-                        <p class="text-white text-2xl leading-10">383618</p>
-                        <p class="text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent">Under Training</p>
+                    <div class="skillProgress-cards">
+                        <span class="skillProgress-cards-icon"><i class="fa-solid fa-users-between-lines"></i></span>
+                        <p class="skillProgress-cards-qty">383618</p>
+                        <p class="skillProgress-cards-title">Under Training</p>
                     </div>
-                    <div class="w-40 mx-auto py-8 flex flex-col items-center">
-                        <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl"><i class="fa-solid fa-users-between-lines"></i></span>
-                        <p class="text-white text-2xl leading-10">647992</p>
-                        <p class="text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent">Trained</p>
+                    <div class="skillProgress-cards">
+                        <span class="skillProgress-cards-icon"><i class="fa-solid fa-users-between-lines"></i></span>
+                        <p class="skillProgress-cards-qty">647992</p>
+                        <p class="skillProgress-cards-title">Trained</p>
                     </div>
-                    <div class="w-40 mx-auto py-8 flex flex-col items-center">
-                        <span class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl"><i class="fa-solid fa-users-between-lines"></i></span>
-                        <p class="text-white text-2xl leading-10">4414</p>
-                        <p class="text-xl font-medium bg-gradient-to-b from-[#fffdec] to-[#e88200] bg-clip-text text-transparent">Placed</p>
+                    <div class="skillProgress-cards">
+                        <span class="skillProgress-cards-icon"><i class="fa-solid fa-users-between-lines"></i></span>
+                        <p class="skillProgress-cards-qty">4414</p>
+                        <p class="skillProgress-cards-title">Placed</p>
                     </div>
                 </div>
             </div>
@@ -321,23 +321,23 @@
     </main>
     
     <!-- Footer starts here -->
-     <footer class="px-4 lg:px-52 pt-8 pb-12 bg-gradient-to-r from-gray-700 via-slate-900 to bg-orange-800 text-white">
+     <footer class="sectionStyle pt-8 pb-12 bg-gradient-to-r from-gray-700 via-slate-900 to bg-orange-800 text-white">
         <div>
             <p class="text-center">This is the Front-End Clone Website of U.P. Skill Development Mission Content on Website is cloned and developed by <strong>Nitesh Barkhane</strong>.</p>
         </div>
         <div class="py-8 flex justify-evenly text-[0.8rem]">
             <ul class="text-gray-400 font-medium">
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>Feedback</li>
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>Terms & Conditions</li>
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>Copyright Policy</li>
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>FAQ</li>
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>Cyber Security</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>Feedback</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>Terms & Conditions</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>Copyright Policy</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>FAQ</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>Cyber Security</li>
             </ul>
             <ul class="text-gray-400 font-medium">
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>Privacy Policy</li>
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>Hyperlinking Policy</li>
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>Careers</li>
-                <li class="my-2 hover:cursor-pointer hover:text-[#fe9116]"><i class="fa-solid fa-angles-right mx-2 text-gray-700"></i>Media</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>Privacy Policy</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>Hyperlinking Policy</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>Careers</li>
+                <li class="footer-items"><i class="fa-solid fa-angles-right footer-items-icon"></i>Media</li>
             </ul>
         </div>
      </footer>

@@ -4,11 +4,12 @@
 
 
 @layer components{
+    
     .navbar-links{
         @apply px-5 border-l border-white transition duration-1000 ease-in-out hover:text-[#fe9116];
     }
     .hero-section-circles{
-        @apply w-48 h-48 border-[3px] border-white rounded-full flex flex-col justify-center items-center cursor-pointer gap-2;
+        @apply w-40 h-40 md:w-48 md:h-48 border-[3px] border-white rounded-full flex flex-col justify-center items-center cursor-pointer gap-2;
     }
     .hero-circle-title{
         @apply text-white w-min text-center font-semibold leading-[1.1rem];

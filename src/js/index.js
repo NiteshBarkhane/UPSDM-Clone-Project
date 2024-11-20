@@ -6,6 +6,11 @@ function updateRealDateTime(){
     const understanderableDateTime = dateTime.toLocaleString()
     timestamp.innerHTML = understanderableDateTime;
 }
+// Toggle mobile Menu/Navbar
+const menu = document.getElementById("navMenu")
+function togglemenu(){
+    menu.classList.toggle('hidden')
+}
 
 // Hero/Banner automatic Slider image change with transition  
 const bannerImages = ['../../assets/images/cover1 1.png','../../assets/images/cover2 1.png','../../assets/images/cover3 1.png','../../assets/images/cover4 1.png']
